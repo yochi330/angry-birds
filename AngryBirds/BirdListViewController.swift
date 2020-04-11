@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class BirdListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var flock: [String]!
+    var flock: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
-    
+}
+
+extension BirdListViewController: UITableViewDataSource {
     //MARK: DataSource
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,5 +38,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
-        
 }
+
+extension BirdListViewController: UITableViewDelegate {
+    //MARK: Delegate
+}
+
