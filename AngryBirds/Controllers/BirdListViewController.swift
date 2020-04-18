@@ -24,6 +24,17 @@ class BirdListViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let destination = segue.destination as? DetailViewController,
+            let selectedIndexPath = self.tableView.indexPathForSelectedRow,
+            let confirmedCell = self.tableView.cellForRow(at: selectedIndexPath) as? BirdCell
+            else { return }
+        
+        let confirmedBird = confirmedCell.bird
+        destination.bird = confirmedBird
+    }
 }
 
 extension BirdListViewController: UITableViewDataSource {
@@ -46,15 +57,5 @@ extension BirdListViewController: UITableViewDataSource {
 
 extension BirdListViewController: UITableViewDelegate {
     //MARK: Delegate
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if
-            let cell = self.tableView.cellForRow(at: indexPath) as? BirdCell,
-            let confirmedBird = cell.bird
-        {
-            confirmedBird.confirmedSighting = true
-            cell.accessoryType = confirmedBird.confirmedSighting ? .checkmark : .none
-        }
-    }
 }
 

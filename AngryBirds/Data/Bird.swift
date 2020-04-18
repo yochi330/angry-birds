@@ -8,7 +8,11 @@
 
 import Foundation
 
-class Bird {
+class Bird: CustomDebugStringConvertible {
+    var debugDescription: String {
+        return "Bird(name: \(self.name), description: \(self.description))"
+    }
+    
     var name: String
     var description: String
     var confirmedSighting: Bool = false
