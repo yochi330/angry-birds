@@ -15,10 +15,13 @@ class Bird: CustomDebugStringConvertible {
     
     var name: String
     var description: String
+    var imageUrl: String
+    
     var confirmedSighting: Bool = false
     
-    init(named name: String, description: String) {
+    init(named name: String, description: String, imageUrl: String) {
         self.name = name
         self.description = description
+        self.imageUrl = imageUrl
     }
 }

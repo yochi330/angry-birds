@@ -61,6 +61,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="birdDescriptionLael" destination="T1z-ht-2FN" id="ssY-tk-JAQ"/>
+                                            <outlet property="birdImageView" destination="Sdn-24-3mt" id="uE1-dc-Wav"/>
                                             <outlet property="birdNameLabel" destination="ken-87-NsW" id="Esc-Ma-FPa"/>
                                             <segue destination="zRd-do-IMc" kind="show" id="2mG-n9-0iN"/>
                                         </connections>

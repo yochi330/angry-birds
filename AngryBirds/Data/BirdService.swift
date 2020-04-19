@@ -12,24 +12,23 @@ class BirdService {
     
     func getBirds() -> [Bird] {
         return [
-            Bird(named: "Oriole", description: "He angry"),
-            Bird(named: "Blue Jay", description: "He REALLY angry"),
-            Bird(named: "Eagle", description: "Looks angry but not that mad"),
-            Bird(named: "Oriole", description: "He angry"),
-            Bird(named: "Blue Jay", description: "He REALLY angry"),
-            Bird(named: "Eagle", description: "Looks angry but not that mad"),
-            Bird(named: "Oriole", description: "He angry"),
-            Bird(named: "Blue Jay", description: "He REALLY angry"),
-            Bird(named: "Eagle", description: "Looks angry but not that mad"),
-            Bird(named: "Oriole", description: "He angry"),
-            Bird(named: "Blue Jay", description: "He REALLY angry"),
-            Bird(named: "Eagle", description: "Looks angry but not that mad"),
-            Bird(named: "Oriole", description: "He angry"),
-            Bird(named: "Blue Jay", description: "He REALLY angry"),
-            Bird(named: "Eagle", description: "Looks angry but not that mad"),
-            Bird(named: "Oriole", description: "He angry"),
-            Bird(named: "Blue Jay", description: "He REALLY angry"),
-            Bird(named: "Eagle", description: "Looks angry but not that mad"),
+            Bird(named: "Oriole", description: "He angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Blue Jay", description: "He REALLY angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Oriole", description: "He angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Blue Jay", description: "He REALLY angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Oriole", description: "He angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Blue Jay", description: "He REALLY angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Oriole", description: "He angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Blue Jay", description: "He REALLY angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Oriole", description: "He angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Blue Jay", description: "He REALLY angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Oriole", description: "He angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Blue Jay", description: "He REALLY angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Oriole", description: "He angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Blue Jay", description: "He REALLY angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Oriole", description: "He angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            Bird(named: "Blue Jay", description: "He REALLY angry", imageUrl: "https://i.pinimg.com/originals/82/cf/cd/82cfcd5c6ccf778b2f7f8c382b0b93f8.jpg"),
+            
         ]
     }
 }
