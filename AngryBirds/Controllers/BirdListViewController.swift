@@ -19,7 +19,13 @@ class BirdListViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.birdService = BirdService()
-        self.flock = self.birdService.getBirds()
+        self.birdService.getBirds(completion: { birds, error in
+            guard let birds = birds, error == nil else {
+                return
+            }
+            self.flock = birds
+            self.tableView.reloadData()
+        })
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
