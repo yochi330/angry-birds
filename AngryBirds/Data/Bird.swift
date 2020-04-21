@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Bird: CustomDebugStringConvertible, Codable {
+class Bird: Codable {
+
     var debugDescription: String {
         return "Bird(name: \(self.name), description: \(self.description))"
     }

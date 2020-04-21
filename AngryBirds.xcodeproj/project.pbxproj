@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76024D91244B771800C0F85D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76024D90244B771700C0F85D /* DetailViewController.swift */; };
+		76024D93244F87E900C0F85D /* BirdTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76024D92244F87E900C0F85D /* BirdTest.swift */; };
 		76BB0F102441075B005D5BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0F0F2441075B005D5BDF /* AppDelegate.swift */; };
 		76BB0F122441075B005D5BDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0F112441075B005D5BDF /* SceneDelegate.swift */; };
 		76BB0F142441075B005D5BDF /* BirdListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BB0F132441075B005D5BDF /* BirdListViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		76024D90244B771700C0F85D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		76024D92244F87E900C0F85D /* BirdTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdTest.swift; sourceTree = "<group>"; };
 		76BB0F0C2441075B005D5BDF /* AngryBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngryBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BB0F0F2441075B005D5BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BB0F112441075B005D5BDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				76BB0F292441075C005D5BDF /* AngryBirdsTests.swift */,
 				76BB0F2B2441075C005D5BDF /* Info.plist */,
+				76024D92244F87E900C0F85D /* BirdTest.swift */,
 			);
 			path = AngryBirdsTests;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76024D93244F87E900C0F85D /* BirdTest.swift in Sources */,
 				76BB0F2A2441075C005D5BDF /* AngryBirdsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
