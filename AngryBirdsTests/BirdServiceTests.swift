@@ -2,7 +2,7 @@
 //  BirdServiceTests.swift
 //  AngryBirdsTests
 //
-//  Created by Chelsea Troy on 4/24/20.
+//  Created by Chelsea Troy on 4/25/20.
 //  Copyright © 2020 Chelsea Troy. All rights reserved.
 //
 
@@ -20,11 +20,12 @@ class BirdServiceTests: XCTestCase {
         self.systemUnderTest = nil
     }
 
-    func testAPI_returnsSuccessResponse() {
+    func testAPI_returnsSuccessfulResult() {
         //Given
         var birds: [Bird]!
         var error: Error?
-        let promise = expectation(description: "Completion handler invoked")
+        
+        let promise = expectation(description: "Completion handler is invoked")
         
         //When
         self.systemUnderTest.getBirds(completion: { data, shouldntHappen in
@@ -38,5 +39,4 @@ class BirdServiceTests: XCTestCase {
         XCTAssertNotNil(birds)
         XCTAssertNil(error)
     }
-
 }

@@ -19,16 +19,21 @@ class BirdListViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.birdService = BirdService()
-        self.birdService.getBirds(completion: { birds, error in
+        
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let confirmedService = self.birdService else { return }
+        
+       confirmedService.getBirds(completion: { birds, error in
             guard let birds = birds, error == nil else {
                 return
             }
             self.flock = birds
             self.tableView.reloadData()
-        })
-        
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
+       })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
